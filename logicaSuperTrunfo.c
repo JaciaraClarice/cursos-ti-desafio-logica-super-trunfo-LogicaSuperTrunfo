@@ -83,19 +83,19 @@ int main() {
     // Comparação de Cartas:
 
     printf("Comparação das Cartas - Atributo: População\n");
-   
-    if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
 
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
+    if (populacao1 > populacao2) {
+        
+    printf("Carta 1 tem maior população.\n");
 
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    } else {
 
+    printf("Carta 2 tem maior população.\n");
+
+    }
+
+    printf("A cidade vencedora é: %d\n", carta1);
+
+    
     return 0;
 }
