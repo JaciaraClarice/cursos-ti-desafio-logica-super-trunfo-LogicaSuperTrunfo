@@ -209,6 +209,104 @@ int main() {
 
     // Fim do desafio nível novato
 
-    return 0;
+    printf("\n***Desafio Lógica do Super Trunfo***\n");
+
+    printf(" - Nível Aventureiro - Menu Interativo\n");
+    
+    // Menu interativo usando switch e comparando com if else
+    
+    // Declaração da váriavel "opção"
+
+    int opcao;
+
+    printf("\nEscolha o atributo para comparar as cartas:\n");
+
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("3 - PIB\n");
+    printf("4 - Pontos turísticos\n");
+    printf("5 - PIB per capita\n");
+    printf("6 - Densidade populacional\n");
+    printf("Opção escolhida: ");
+    scanf("%d", &opcao);
+
+    printf("\n-> Resultado da Comparação\n");
+
+    switch (opcao) {
+        case 1: // População
+            printf("\nAtributo: População\n");
+            printf("%.2f x %.2f\n", populacao1, populacao2);
+            if (populacao1 > populacao2)
+                printf("Vencedor: %s\n", nomedacidade1);
+            else if (populacao2 > populacao1)
+                printf("Vencedor: %s\n", nomedacidade2);
+            else
+                printf("Empate!\n");
+            break;
+
+        case 2: // Área
+            printf("\nAtributo: Área\n");
+            printf("%.2f x %.2f\n", area1, area2);
+            if (area1 > area2)
+                printf("Vencedor: %s\n", nomedacidade1);
+            else if (area2 > area1)
+                printf("Vencedor: %s\n", nomedacidade2);
+            else
+                printf("Empate!\n");
+            break;
+
+        case 3: // PIB
+            printf("\nAtributo: PIB\n");
+            printf("%.2f x %.2f\n", pib1, pib2);
+            if (pib1 > pib2)
+                printf("Vencedor: %s\n", nomedacidade1);
+            else if (pib2 > pib1)
+                printf("Vencedor: %s\n", nomedacidade2);
+            else
+                printf("Empate!\n");
+            break;
+
+        case 4: // Pontos turísticos
+            printf("\nAtributo: Pontos turísticos\n");
+            printf("%d x %d\n", pontosturisticos1, pontosturisticos2);
+            if (pontosturisticos1 > pontosturisticos2)
+                printf("Vencedor: %s\n", nomedacidade1);
+            else if (pontosturisticos2 > pontosturisticos1)
+                printf("Vencedor: %s\n", nomedacidade2);
+            else
+                printf("Empate!\n");
+            break;
+
+        case 5: // PIB per capita
+            printf("\nAtributo: PIB per capita\n");
+            printf("%.2f x %.2f\n", pibpercapita1, pibpercapita2);
+            if (pibpercapita1 > pibpercapita2)
+                printf("Vencedor: %s\n", nomedacidade1);
+            else if (pibpercapita2 > pibpercapita1)
+                printf("Vencedor: %s\n", nomedacidade2);
+            else
+                printf("Empate!\n");
+            break;
+
+        case 6: // Densidade populacional (MENOR vence)
+            printf("\nAtributo: Densidade populacional (MENOR VENCE)\n");
+            printf("%.2f x %.2f\n", densidadepopulacional1, densidadepopulacional2);
+            if (densidadepopulacional1 < densidadepopulacional2)
+                printf("Vencedor: %s\n", nomedacidade1);
+            else if (densidadepopulacional2 < densidadepopulacional1)
+                printf("Vencedor: %s\n", nomedacidade2);
+            else
+                printf("Empate!\n");
+            break;
+
+        default:
+            printf("Opção inválida! Escolha entre 1 e 6.\n");
+            break;
+    }
+    
+
+    // Fim do desafio aventureiro
+
+return 0;
 
 }
